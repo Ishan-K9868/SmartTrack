@@ -1,0 +1,121 @@
+/* Global Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7FFF7;
+    color: #4E4E4E;
+}
+
+header {
+    background-color: #1A535C;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFE66D;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FF6B6B;
+    border-radius: 5px;
+}
+
+.cta {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #FFE66D;
+    color: #1A535C;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1A535C 0%, #4E4E4E 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.hero .cta {
+    margin-top: 40px;
+    background-color: #FFE66D;
+    color: #1A535C;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+.dynamic-map {
+    margin-top: 40px;
+    background-color: #1A535C;
+    padding: 20px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .cta {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    .dynamic-map {
+        width: 95%;
+    }
+}
